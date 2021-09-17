@@ -13,7 +13,6 @@
       .main {
         display: flex;
         flex-direction: row;
-        justify-content: center;
       }
       ul {
         list-style-type: none;
@@ -23,17 +22,8 @@
     <title></title>
   </head>
   <body>
-    <h1 class="text-center">.....Country Details......</h1>
+    <h1 class="text-center">..... {{name}} ......</h1>
     <div class="main">
-      <ul>
-        <li><h3>Flag</h3></li>
-        <li><h3>Capital</h3></li>
-        <li><h3>Largest city</h3></li>
-        <li><h3>Language</h3></li>
-        <li><h3>Area</h3></li>
-        <li><h3>Population</h3></li>
-        <li><h3>Gdp nominal</h3></li>
-      </ul>
       <ul class="list-group">
         {% for movie in df%}
         <li class="list-group-item">
